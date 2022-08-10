@@ -1,0 +1,24 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #efeaf7;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+}
