@@ -7,7 +7,7 @@ const events = [
     venue:
       "Opposite Evangelical Nursery and Primary School, Lobi Quaters, Old GRA, Makurdi.",
     contact: ["08052465145", "08060386628"],
-    status: "upcoming",
+    status: "past",
     description:
       "Enroll your kids in a free summer bootcamp. Where they can learn variouse skills using softwares like Scratch and also some basic programming language experience with HTML and Python.",
   },
