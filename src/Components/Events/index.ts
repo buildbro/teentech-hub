@@ -1,3 +1,4 @@
+//event status code: 'upcoming' and 'past'
 const events = [
   {
     title: "Summer Bootcamp `22",
