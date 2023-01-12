@@ -27,6 +27,7 @@ const styles = {
 };
 
 const EventPhotos = () => {
+  const arrayOfImages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
   return (
     <Box>
       <Container>
@@ -36,17 +37,20 @@ const EventPhotos = () => {
           </Typography>
         </div>
 
-        <ImageList cols={4} rowHeight={164}>
-          {[...new Array(17)].map((item, index) => (
-            <ImageListItem key={index}>
-              <img
-                src={`/images/teen-code/${index + 1}.jpg`}
-                srcSet={`/images/teen-code/${index + 1}.jpg`}
-                alt={"Teen Tech Hub"}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
+        <ImageList cols={3} rowHeight={256}>
+          {
+            
+            arrayOfImages.reverse().map((item, index) => (
+              <ImageListItem key={index}>
+                <img
+                  src={`/images/teen-code/${item}.jpg`}
+                  srcSet={`/images/teen-code/${item}.jpg`}
+                  alt={"Teen Tech Hub"}
+                  loading="lazy"
+                />
+              </ImageListItem>
+            ))
+          }
         </ImageList>
       </Container>
     </Box>
