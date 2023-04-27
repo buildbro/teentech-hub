@@ -1,5 +1,17 @@
 const events = [
   {
+    title: "Easter Holiday Bootcamp `23",
+    date: "13th April - 14th April",
+    time: "10AM Everyday",
+    link: "",
+    venue:
+      "Opposite Evangelical Nursery and Primary School, Lobi Quaters, Old GRA, Makurdi.",
+    contact: ["08052465145", "08060386628"],
+    status: "past",
+    description:
+      "Enroll your kids in a free summer bootcamp. At this bootcamp your kids will learn about build games and animating stories using Scratch software.",
+  },
+  {
     title: "Summer Bootcamp `22",
     date: "15th August - 20th August",
     time: "9AM Everyday",

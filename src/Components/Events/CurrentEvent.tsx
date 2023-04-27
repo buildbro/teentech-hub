@@ -27,7 +27,7 @@ const CurrentEvent = () => {
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                flexDirection: { xs: "column", md: "row" },
+                flexDirection: { xs: "column", md: "row" }
               }}
             >
               <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -67,7 +67,7 @@ const CurrentEvent = () => {
                     color="primary"
                     component="div"
                   >
-                    Time: {evt.time}
+                    Time: {evt.time} - {evt.date}
                   </Typography>
                   {evt.link && (
                     <Link href={evt.link}>

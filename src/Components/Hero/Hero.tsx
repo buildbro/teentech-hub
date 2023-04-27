@@ -69,7 +69,7 @@ const Hero = () => {
                 <Box
                   component="img"
                   sx={styles.img}
-                  src="/images/teen-code/1.jpg"
+                  src="/images/hero-image.jpg"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
