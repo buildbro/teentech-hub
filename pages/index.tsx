@@ -1,8 +1,7 @@
-import * as React from "react";
+// import * as React from "react";
 import type { NextPage } from "next";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+// import Head from "next/head";
+import { Container } from "@mui/material";
 import Link from "../src/Components/Link";
 import Hero from "../src/Components/Hero";
 import About from "../src/Components/About";

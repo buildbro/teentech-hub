@@ -18,10 +18,12 @@ import colors from "../Theming/Colors";
 
 const quickLinks: Array<any> = [
   { title: "Home", link: "/" },
-  { title: "About", link: "#about" },
-  { title: "Program Training And Resources", link: "#program" },
-  { title: "News", link: "#news" },
-  { title: "Contact", link: "#contact" },
+  { title: "About", link: "/#about" },
+  { title: "Program Training And Resources", link: "/#program" },
+  { title: "Shop", link: "/shop" },
+  { title: "News", link: "/#news" },
+  // { title: "Contact", link: "#contact" },
+  { title: "Contact", link: "/contact" },
 ];
 
 const socialLinks: Array<any> = [
@@ -33,7 +35,7 @@ const socialLinks: Array<any> = [
   {
     title: "Instagram",
     icon: <InstagramIcon />,
-    link: "https://www.instagram.com/teentechhub",
+    link: "https://instagram.com/teentechhub",
   },
   {
     title: "Twitter",
@@ -58,7 +60,7 @@ const Footer = () => {
       <Container>
         <Box>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={4}>
               <List
                 sx={{
                   height: "97%",
@@ -91,7 +93,7 @@ const Footer = () => {
                 </ListItem>
               </List>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={4}>
               <List>
                 <ListItem>
                   <Typography variant="h5">Quick Links</Typography>
@@ -111,7 +113,7 @@ const Footer = () => {
                 })}
               </List>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={4}>
               <List>
                 <ListItem>
                   <Typography variant="h5">Social Links</Typography>

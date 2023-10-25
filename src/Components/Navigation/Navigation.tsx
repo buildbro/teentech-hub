@@ -1,28 +1,16 @@
-import * as React from "react";
+import { useEffect, useState } from "react";
 import type { NextComponentType } from "next";
 
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Slide from "@mui/material/Slide";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-
-import MenuIcon from "@mui/icons-material/Menu";
+import {
+  Box, Container, AppBar, Toolbar, Breadcrumbs,
+  Button, IconButton, Typography, useScrollTrigger,
+  List, ListItem, ListItemButton, ListItemText, ListItemIcon,
+  Slide, Drawer, Divider
+} from "@mui/material";
 
 import Link from "../Link";
 
+import MenuIcon from "@mui/icons-material/Menu";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -45,7 +33,7 @@ const socials = [
   {
     label: "Instagram",
     icon: <InstagramIcon />,
-    link: " https://www.instagram.com/teentechhub",
+    link: "https://instagram.com/teentechhub",
   },
 ];
 
@@ -54,9 +42,10 @@ const links = [
   { label: "About", link: "#about" },
   { label: "Program Training and Resources", link: "#program" },
   { label: "News", link: "#" },
-  { label: "Contact", link: "#" },
+  { label: "Contact", link: "/contact" },
   { label: "Support", link: "https://forms.gle/NUKcEeRim43szA5h7" },
   { label: "Events", link: "/events" },
+  { label: "Shop", link: "/shop" },
 ];
 
 const styles = {
@@ -82,14 +71,14 @@ const styles = {
 };
 
 const Navigation: NextComponentType = () => {
-  const [open, setOpen] = React.useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
   const trigger = useScrollTrigger({
     target: typeof window !== "undefined" ? window : undefined,
   });
 
   const router = useRouter();
 
-  React.useEffect(() => {
+  useEffect(() => {
     setOpen(false);
   }, [router.asPath]);
   return (
@@ -108,7 +97,7 @@ const Navigation: NextComponentType = () => {
           {links.map((link, index) => (
             <ListItem key={index} disablePadding>
               <ListItemButton>
-                <Link href={link.link}>
+                <Link href={link.link} width="100%">
                   <ListItemText primary={link.label} />
                 </Link>
               </ListItemButton>
@@ -116,6 +105,7 @@ const Navigation: NextComponentType = () => {
           ))}
         </List>
       </Drawer>
+      
       <Slide appear={false} direction="down" in={!trigger}>
         <AppBar sx={styles.appBar}>
           <Toolbar>
@@ -174,6 +164,7 @@ const Navigation: NextComponentType = () => {
           </Toolbar>
         </AppBar>
       </Slide>
+
       <Toolbar />
     </>
   );
