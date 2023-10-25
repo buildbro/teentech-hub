@@ -1,0 +1,6 @@
+
+.errorContainer .formError {
+    color: #de2341;
+    font-size: smaller;
+    padding-left: 15px;
+}

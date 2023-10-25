@@ -1,0 +1,32 @@
+/* CONTACT PAGE STYLES */
+.contactPage .container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin: auto;
+    margin-top: 3rem;
+    /* min-height: 70vh; */
+}
+
+.contactPage .errorContainer .formError {
+    color: #de2341;
+    font-size: smaller;
+    padding-left: 15px;
+}
+
+
+/* NOT FOUND PAGE STYLES */
+.notFound .container {
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notFound .container .error {
+    color: red;
+}

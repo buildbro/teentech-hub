@@ -22,7 +22,7 @@ const CurrentEvent = () => {
       {events
         .filter((evt: any) => evt.status === "upcoming")
         .map((evt: any) => (
-          <Grid key={evt.name} item xs={12}>
+          <Grid key={evt.id} item xs={12}>
             <Card
               sx={{
                 display: "flex",

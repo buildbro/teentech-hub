@@ -36,6 +36,7 @@ const Events: NextPage = () => {
                 key={index}
                 item
                 xs={12}
+                sm={6}
                 md={4}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
