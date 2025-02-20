@@ -8,7 +8,7 @@ const events = [
     venue:
       "TBD.",
     contact: ["08052465145", "08060386628"],
-    status: "upcoming",
+    status: "past",
     description:
       "We're excited to be hosting our first ever Scratch Day. Join us for a day of celebrating kids coding! It promises to be fun and educative :)",
     image: "/images/scratch-day.png",
